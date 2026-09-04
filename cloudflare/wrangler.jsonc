@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "maksim-realtor-leads",
+  "main": "lead-worker.js",
+  "compatibility_date": "2026-09-04",
+  "routes": [
+    {
+      "pattern": "rieltor-maksim.webhunters.ru/api/lead*",
+      "zone_name": "webhunters.ru"
+    }
+  ],
+  "send_email": [
+    {
+      "name": "EMAIL"
+    }
+  ]
+}
