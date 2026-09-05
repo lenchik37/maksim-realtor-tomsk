@@ -120,7 +120,7 @@ export default {
       });
       return json({ ok: true }, 200, origin);
     } catch (error) {
-      console.error("Email delivery failed", error?.code || "unknown");
+      console.error("Email delivery failed", error?.code || "unknown", error?.message || "unknown");
       return json({ ok: false, message: "Не удалось отправить заявку" }, 502, origin);
     }
   },
