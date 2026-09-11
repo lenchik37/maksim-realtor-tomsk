@@ -1,4 +1,5 @@
 const allowedOrigins = new Set([
+  "https://rieltor-maksim.saitt.ru",
   "https://rieltor-maksim.webhunters.ru",
   "http://rieltor-maksim.webhunters.ru",
 ]);
